@@ -14,9 +14,13 @@
 </head>
 <body>
 
-<input type="button" class="btn btn-primary" onclick="showAndroidToast('Hello from JS')">Check
+<input id="inputField" type="text" name="kfaf">
+<button type="button" class="btn btn-primary" onclick="showAndroidToast(document.getElementById('inputField').value)">
+	Check
+</button>
 <script type="text/javascript">
 	function showAndroidToast(toast){
+		console.log('fjaiufja');
 		Android.showToast(toast);
 	}
 </script>
