@@ -11,13 +11,36 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+<style>
+	figure {
+		background: url(spider1.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		/*height: 100vh;*/
+		min-height: 100vh;
+		margin-bottom: 0px;
+	}
+
+	button {
+		width: 200px;
+		height: 50px;
+		top: 60%;
+		left: 50%;
+		transform:  translate(-50%, -50%);
+		position: absolute;
+	}
+</style>
 </head>
 <body>
+	<figure>
+		<button 
+type="button" class="btn btn-primary" onclick="showAndroidToast('actionbutton')">Watch right now!</button>
+	</figure>
+			
 
-<input id="inputField" type="text" name="kfaf">
-<button type="button" class="btn btn-primary" onclick="showAndroidToast(document.getElementById('inputField').value)">
-	Check
-</button>
+<!-- <input id="inputField" type="text" name="kfaf"> -->
 <script type="text/javascript">
 	function showAndroidToast(toast){
 		console.log('fjaiufja');
